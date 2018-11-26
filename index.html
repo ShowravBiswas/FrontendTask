@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-header-content">
+
+                    <span>Pages</span>
+                    <span id="count-result"></span>
+
+
+                    <button id="addmenu"></button>
+                </div>
+
+            </div>
+            <div class="sidebar-content">
+                <div class="menu">
+                    <ul id="list" class="slides">
+                        <li class="show slide" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)">
+                            <a href="#menu1"><span>Home</span></a>
+                            <div class="action-img">
+                                <img src="images/checkbox.png">
+                                <img onclick="removeItem(this);" src="images/delete.png">
+                            </div>
+
+                        </li>
+                        <li class="show menuactive slide" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><a href="#menu1"><span>Services</span></a>
+                            <div class="action-img">
+                                <img src="images/checkbox.png">
+                                <img onclick="removeItem(this);" src="images/delete.png">
+                            </div>
+                        </li>
+                        <li class="show slide" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><a href="#menu1"><span>Privacy</span></a>
+                            <div class="action-img">
+                                <img src="images/checkbox.png">
+                                <img onclick="removeItem(this);" src="images/delete.png">
+                            </div>
+                        </li>
+                        <li class="show slide" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><a href="#menu1"><span>Contact</span></a>
+                            <div class="action-img">
+                                <img src="images/checkbox.png">
+                                <img onclick="removeItem(this);" src="images/delete.png">
+                            </div>
+                        </li>
+                        <li class="show slide" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><a href="#menu1"><span>Address</span></a>
+                            <div class="action-img">
+                                <img src="images/checkbox.png">
+                                <img onclick="removeItem(this);" src="images/delete.png">
+                            </div>
+                        </li>
+                        <li class="show slide" draggable="true" ondragstart="dragStarted(event)" ondragover="draggingOver(event)" ondrop="dropped(event)"><a href="#menu1"><span>MENU 1</span></a>
+                            <div class="action-img">
+                                <img src="images/checkbox.png">
+                                <img onclick="removeItem(this);" src="images/delete.png">
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
+            <div class="sidebar-footer">
+                <label for="">Filter:</label>
+                <div id="input_container">
+                    <input id="filter" onkeyup="myFunction()" onkeyup="this.onchange();" onpaste="this.onchange();" oninput="this.onchange();" type="text">
+                    <img src="images/delete.png" id="deleteimg" onclick="removeText();">
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-header">
+                <ul id="tabrow">
+                    <li class="tab">Page Details</li>
+                    <li class="tab active">Page Content</li>
+                    <li class="tab">Sit amet</li>
+
+                </ul>
+            </div>
+            <div class="main-content">
+
+                Content
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+
+                Content
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+
+                Content
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+
+                Content
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+
+                Content
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+
+                Content
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+
+                Content
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+
+                Content
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit. Consequatur doloremque,
+                dolorum error hic non numquam ratione. Accusantium consequuntur esse nesciunt quaerat ullam.
+                Minima molestias obcaecati odit placeat possimus quaerat, voluptate.
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        //add and remove tab select class
+        document.getElementById('tabrow').addEventListener("click", function(e) {
+            if (e.target && e.target.nodeName === "LI") {
+                let elements = document.getElementById('tabrow').children;
+                for (let i = 0; i < elements.length; ++i) {
+                    elements[i].classList.remove("active");
+                }
+                e.target.classList.add("active");
+            }
+        }, true);
+
+        //script for add menu
+        var count = 1;
+        document.getElementById('addmenu').onclick = function() {
+
+            count++;
+            var html = '<a href="#menu1"><span> MENU ';
+            var list = document.getElementById('list');
+            var newLI = document.createElement('li');
+            newLI.innerHTML = html + ' ' + count +'</span></a><div class="action-img">' +
+                '<img src="images/checkbox.png"><img onclick="removeItem(this);" src="images/delete.png"></div>';
+            list.appendChild(newLI);
+            newLI.classList.add("show");
+            newLI.setAttribute("draggable", "true");
+            newLI.setAttribute("ondragstart", "dragStarted(event)");
+            newLI.setAttribute("ondragover", "draggingOver(event)");
+            newLI.setAttribute("ondrop", "dropped(event)");
+
+        }
+
+        //add and remove menu select class
+        document.getElementById('list').addEventListener("click", function(e) {
+            if (e.target && e.target.nodeName === "LI") {
+                let elements = document.getElementById('list').children;
+                for (let i = 0; i < elements.length; ++i) {
+                    elements[i].classList.remove("menuactive");
+                }
+                e.target.classList.add("menuactive");
+            }
+        }, true);
+
+        //Menu Filter Function
+        function myFunction() {
+            var count = 0;
+            var result = document.getElementById("count-result");
+            var element = document.getElementById("filter");
+            var deleteImg = document.getElementById("deleteimg");
+            var length = element.value.length;
+            if (length > 0) {
+                deleteImg.style.visibility = 'visible';
+            } else {
+                deleteImg.style.visibility = 'hidden';
+                //result.style.visibility = 'hidden';
+            }
+            var input, filter, ul, li, a, i;
+            input = document.getElementById("filter");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("list");
+            li = ul.getElementsByTagName("li");
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                    count++;
+                    document.getElementById("count-result").innerHTML=count+' '+'Filtered Results';
+                    result.style.visibility = 'visible';
+                    //return count;
+                } else {
+
+                    li[i].style.display = "none";
+                }
+            }
+
+            if (count < 1) {
+                document.getElementById("count-result").innerHTML=count+' '+'Filtered Result';
+                result.style.visibility = 'visible';
+            } else if(count===1){
+                document.getElementById("count-result").innerHTML=count+' '+'Filtered Result';
+            }
+            if (element.value === "") {
+                result.style.visibility = 'hidden';
+            }
+        }
+
+        //Filter text removal function
+        function removeText() {
+            var element = document.getElementById("filter");
+            var deleteImg = document.getElementById("deleteimg");
+            element.value = "";
+            deleteImg.style.visibility = 'hidden';
+            myFunction();
+        }
+
+        function removeItem(e) {
+            if (confirm('Are you sure?'))
+            {
+                var a = e.parentElement.parentElement;
+                a.style.width = "0px";
+                setTimeout(function() {
+                    e.parentElement.parentElement.parentElement.removeChild(a);
+                }, 600);
+
+            }
+
+        }
+        var source;
+        function dragStarted(evt){
+            //start drag
+            source=evt.target;
+            //set data
+            evt.dataTransfer.setData("text/plain", evt.target.innerHTML);
+            //specify allowed transfer
+            evt.dataTransfer.effectAllowed = "move";
+        }
+        function draggingOver(evt){
+            //drag over
+            evt.preventDefault();
+            //specify operation
+            evt.dataTransfer.dropEffect = "move";
+        }
+        function dropped(evt){
+            //drop
+            evt.preventDefault();
+            evt.stopPropagation();
+            //update text in dragged item
+            source.innerHTML = evt.target.innerHTML;
+            //update text in drop target
+            evt.target.innerHTML = evt.dataTransfer.getData("text/plain");
+        }
+
+
+    </script>
+</body>
+
+</html>
